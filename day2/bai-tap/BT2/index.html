@@ -1,131 +1,129 @@
-
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Đăng kí học viên</title>
-    </head>
-    <style>
-         body {
-            background-color: rgb(242, 242, 166);
-            color: blue;
-            
-            
-        }
-        .header {
-            display: flexbox;
-            background-color: rgb(194, 243, 226);
-            color: blue;
-            font-family: monospace;
-            font-size: 20px;
-        }
-        .nam {
-            color: rgb(20, 19, 19);
-        
-        }
-        .form_name {
-            margin-left: 37px;
-            width: 200px;
-            border: 3px inset #f2edef;
-        }
-        .input_birth {
-            margin-top: 8px;
-            margin-left: 33px;
-            width: 110px;
-            border: 3px inset #f2edef;
-            
-        }
-        .checkbox {
-            margin-top: 8px;
-            margin-left: 45px;
-            border: 4px inset #f2edef;
-        }
-        .address {
-            margin-top: 0px;
-            margin-left: 51px;
-            height: 50px;
-            white-space: 50px;
-            border: 3px inset #f2edef;
-        }
-        .option {
-            margin-top: 8px;
-            margin-left: 72px;
-            width: 100px;
-            border: 3px inset #f2edef;
-           
-        }
-        .email {
-            margin-top: 8px;
-            margin-left: 60px;
-            width: 150px;
-            border: 3px inset #f2edef;
-        }
-        .phone {
-            margin-top: 8px;
-            margin-left: 31px;
-            width: 150px;
-            border: 3px inset #f2edef;
-        }
-        .button{
-            margin-left: 105px;
-            margin-top: 8px;
-        }
-        .dangky {
-            width: 75px;
-            border: 3px outset #f2edef;
-        }
-        .nhaplai {
-            width: 75px;
-            border: 3px outset #f2edef;
-        }
- 
-    </style>
-     <body>
-        <h1 class="header">ĐĂNG KÍ HỌC VIÊN</h1>
-        <form action="" class="form_container">
-        <div class="full_name">
-            <label class="name">Họ và tên</label>
-            <input class="form_name" type="text" name="" value="">
-        </div>
-        <div class="birth">
-            <label class="label_birth">Ngày sinh</label>
-            <input class="input_birth" type="datetime" name="" value="">
-        </div>
-        <div>
-            <label>Giới tính</label>
-           <input class="checkbox" type="radio" name="gender" value="">
-            <label class="nam">Nam</label>
-            <input type="radio" name="gender" value="">
-            <label class="nam">Nữ</label>
-        </div>
-        
-        <div>
-            <label class="label_address">Địa chỉ</label>
-            <input class="address" type="textarea rows=" cols="" ></textarea>
-        </div>
-        <div>
-            <label>Lớp</label>
-            <select class="option">
-                <option value="">-Chọn lớp-</option>
-                <option value="lớp2">Lớp 2</option>
-                <option value="lớp3">Lớp 3</option>
-                <option value="lớp4">Lớp 4</option>
-                <option value="lớp5">Lớp 5</option>
-            </select>
-        </div>
-        <div>
-            <label>Email</label>
-            <input class="email" type="text" name="email" value=""> 
-        </div>
-        <div>
-            <label>Điện thoại</label>
-            <input class="phone" type="number" name="phone" value="">
-        </div>
-        <div class="button">
-            <button class="dangky" type="submit" name="register" value="Đăng kí">Đăng ký</button>
-            <button class="nhaplai" type="reset" name="" value="">Nhập lại</button>
-        </div>
-        </form>
-    </body>
-    
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+   ::placeholder {
+    color: black;
+   }
+</style>
+<body>
+    <form action="">
+        <h2>THÊM SINH VIÊN</h2>
+        <table>
+            <tr>
+                <td colspan="5">Họ tên</td>
+                <td>
+                    <input type="text" placeholder="Nguyễn Văn An">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="5">Ngày sinh</td>
+                <td>
+                    <input type="date" name="date" id="">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="5">
+                   <label for="gender">Giới tính</label> 
+                </td>
+                <td>
+                    <input type="radio" name="gender">Nam
+                    <input type="radio" name="gender">Nữ
+                </td>
+            </tr>
+            <tr>
+                <td colspan="5">Quê quán</td>
+                <td>
+                    <select name="tinh" id="">
+                        <option value="">An Giang</option>
+                        <option value="">Hà Nội</option>
+                        <option value="">Phú yên</option>
+                        <option value="">Thừa thiên huế</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="5">Địa chỉ</td>
+                <td>
+                    <input type="text">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="5">Sở thích</td>
+                <td>
+                    <input type="checkbox">Thể thao
+                    <input type="checkbox">Du lịch
+                    <input type="checkbox">Phim ảnh
+                    <input type="checkbox">Ẩm thực
+                </td>
+            </tr>
+            <tr>
+                <td colspan="5">Màu yêu thích</td>
+                <td>
+                    <input type="color" name="red">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="5">Email</td>
+                <td>
+                    <input type="email">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="5">Trang Facebook</td>
+                <td>
+                    <input type="text">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="5">Lớp</td>
+                <td>
+                    <select>
+                        <option>Lớp CNTT khóa 8</option>
+                        <option>Lớp CNTT khóa 9</option>
+                        <option>Lớp CNTT khóa 10</option>
+                        <option>Lớp CNTT khóa 11</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="5">Tên đăng nhập</td>
+                <td>
+                    <input type="text">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="5">Mật khẩu</td>
+                <td>
+                    <input type="password">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="5">Ảnh thẻ</td>
+                <td>
+                    <input type="file" name="" id="">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="5">Mô tả</td>
+                <td>
+                    <textarea name="" id="" cols="25" rows="3" placeholder="Nhập nội dung vào đây!"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="5">
+                    <button type="submit">Gửi</button>
+                </td>
+                <td>
+                    <button type="reset">Nhập lại</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
 </html>
