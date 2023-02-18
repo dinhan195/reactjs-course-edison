@@ -1,0 +1,113 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 1</title>
+  </head>
+  <style>
+    .container {
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      color: blue;
+    }
+    h1 {
+        text-align: center;
+        color: blue
+    }
+    .text-time {
+        margin-left: 220px;
+        text-align: right;;
+    }
+    .table {
+        display: flex;
+        justify-content: center;
+    }
+    table,
+    th,
+    td {
+      border: 2px solid black;
+      border-collapse: collapse;
+    }
+    td {
+      text-align: left;
+      padding: 2px 30px 2px 5px;
+    }
+    tr :first-child {
+      text-align: center;
+      padding: unset;
+      width: 40px;
+    }
+    th {
+      text-align: unset;
+      text-align: center;
+    }
+    .table-header {
+      background-color: rgb(235, 184, 54);
+    }
+    tr > th {
+      background-color: gold;
+    }
+    
+  </style>
+  <body>
+    <h1>THỜI KHÓA BIỂU</h1>
+    <div class="container">
+      
+      <div>
+        <p>Lớp: T0908I</p>
+        <p>Giáo viên KhoaNV</p>
+        <p>Phòng học: Class3/Lab3</p>
+      </div>
+      <div class="text-time">
+        <p>Thời gian học: 13p0-17p0</p>
+        <p>Ngày học: Thứ 3, 5, 7</p>
+      </div>
+    </div>
+    <div class="table">
+        <table>
+            <tr>
+              <td colspan="3"></td>
+              <th>Thứ 3</th>
+              <th>Thứ 4</th>
+              <th>Thứ 5</th>
+            </tr>
+            <tr class="table-header">
+              <th>Tuần</th>
+              <th>Ngày bắt đầu</th>
+              <th>Ngày kết thúc</th>
+              <th colspan="3">Môn học</th>
+            </tr>
+            <tr>
+              <td>01</td>
+              <td>02/01/2022</td>
+              <td>02/04/2023</td>
+              <td>CF-T1,L1</td>
+              <td>CF-T2,L2</td>
+              <td>CF-T3,L3</td>
+            </tr>
+            <tr>
+              <td>02</td>
+              <td>02/03/2022</td>
+              <td>02/02/2023</td>
+              <td>CF-T4,L4</td>
+              <td>CF-written Test</td>
+              <td>C-T1,L1</td>
+            </tr>
+            <tr>
+              <td>03</td>
+              <td>02/06/2022</td>
+              <td>02/06/2022</td>
+              <td>CF-T1,L1</td>
+              <td>CF-T1,L1</td>
+              <td>CF-T1,L1</td>
+            </tr>
+          </table>
+    </div>
+    
+  </body>
+</html>

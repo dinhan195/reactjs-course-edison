@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Đăng kí học viên</title>
+    </head>
+    <style>
+         body {
+            background-color: rgb(242, 242, 166);
+            color: blue;
+            
+            
+        }
+        .header {
+            display: flexbox;
+            background-color: rgb(194, 243, 226);
+            color: blue;
+            font-family: monospace;
+            font-size: 20px;
+        }
+        .nam {
+            color: rgb(20, 19, 19);
+        
+        }
+        .form_name {
+            margin-left: 37px;
+            width: 200px;
+            border: 3px inset #f2edef;
+        }
+        .input_birth {
+            margin-top: 8px;
+            margin-left: 33px;
+            width: 110px;
+            border: 3px inset #f2edef;
+            
+        }
+        .checkbox {
+            margin-top: 8px;
+            margin-left: 45px;
+            border: 4px inset #f2edef;
+        }
+        .address {
+            margin-top: 0px;
+            margin-left: 51px;
+            height: 50px;
+            white-space: 50px;
+            border: 3px inset #f2edef;
+        }
+        .option {
+            margin-top: 8px;
+            margin-left: 72px;
+            width: 100px;
+            border: 3px inset #f2edef;
+           
+        }
+        .email {
+            margin-top: 8px;
+            margin-left: 60px;
+            width: 150px;
+            border: 3px inset #f2edef;
+        }
+        .phone {
+            margin-top: 8px;
+            margin-left: 31px;
+            width: 150px;
+            border: 3px inset #f2edef;
+        }
+        .button{
+            margin-left: 105px;
+            margin-top: 8px;
+        }
+        .dangky {
+            width: 75px;
+            border: 3px outset #f2edef;
+        }
+        .nhaplai {
+            width: 75px;
+            border: 3px outset #f2edef;
+        }
+ 
+    </style>
+     <body>
+        <h1 class="header">ĐĂNG KÍ HỌC VIÊN</h1>
+        <form action="" class="form_container">
+        <div class="full_name">
+            <label class="name">Họ và tên</label>
+            <input class="form_name" type="text" name="" value="">
+        </div>
+        <div class="birth">
+            <label class="label_birth">Ngày sinh</label>
+            <input class="input_birth" type="datetime" name="" value="">
+        </div>
+        <div>
+            <label>Giới tính</label>
+           <input class="checkbox" type="radio" name="gender" value="">
+            <label class="nam">Nam</label>
+            <input type="radio" name="gender" value="">
+            <label class="nam">Nữ</label>
+        </div>
+        
+        <div>
+            <label class="label_address">Địa chỉ</label>
+            <input class="address" type="textarea rows=" cols="" ></textarea>
+        </div>
+        <div>
+            <label>Lớp</label>
+            <select class="option">
+                <option value="">-Chọn lớp-</option>
+                <option value="lớp2">Lớp 2</option>
+                <option value="lớp3">Lớp 3</option>
+                <option value="lớp4">Lớp 4</option>
+                <option value="lớp5">Lớp 5</option>
+            </select>
+        </div>
+        <div>
+            <label>Email</label>
+            <input class="email" type="text" name="email" value=""> 
+        </div>
+        <div>
+            <label>Điện thoại</label>
+            <input class="phone" type="number" name="phone" value="">
+        </div>
+        <div class="button">
+            <button class="dangky" type="submit" name="register" value="Đăng kí">Đăng ký</button>
+            <button class="nhaplai" type="reset" name="" value="">Nhập lại</button>
+        </div>
+        </form>
+    </body>
+    
+</html>
