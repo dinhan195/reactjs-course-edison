@@ -1,0 +1,58 @@
+/** @format */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 25px;
+}
+body {
+  width: 100%;
+}
+header {
+  background-color: rgb(95, 62, 125);
+  padding: 50px;
+  text-align: center;
+  color: white;
+}
+h1 {
+   font-size: 50px
+}
+h2 {
+  text-align: center;
+  padding: 50px;
+  font-size: 30px;
+}
+.list-card {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-column-gap: 80px;
+  padding: 0 50px 0 50px;
+}
+.card {
+  box-shadow: 1px 1px 1px 1px gray;
+}
+.img {
+  height: 400px;
+  background-color: antiquewhite;
+}
+.info {
+  padding: 30px;
+  text-align: left;
+}
+button {
+  width: 100%;
+  background-color: rgb(24, 23, 23);
+  color: white;
+  padding: 10px;
+}
+button:hover {
+  background-color: gray;
+}
+.info > h2,
+h4,
+p {
+  margin: 20px 0 20px 0;
+}
+.title {
+    color: gray;
+}
