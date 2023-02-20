@@ -1,0 +1,46 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+header {
+    background-color: aquamarine;
+    text-align: center;
+    padding: 50px;
+}
+nav {
+    background-color: rgb(50, 49, 49);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.sile {
+    background-color: antiquewhite;
+    padding: 10px;
+}
+.sile-1 {
+    margin-top: 20px;
+}
+.img {
+    background-color: gray;
+    height: 100px;
+}
+.img-2 {
+    margin-top: 2px;
+    height: 30px;
+    background-color: gray;
+}
+main {
+    display: grid;
+    grid-template-columns: 30% auto;
+}
+.content {
+    padding: 10px;
+}
+section {
+    padding: 20px;
+}
+footer {
+    background-color: gray;
+    text-align: center;
+    padding: 10px;
+}
