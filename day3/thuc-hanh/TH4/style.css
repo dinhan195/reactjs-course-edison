@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.navbar {
+    background-color: rgb(46, 46, 46);
+    padding: 20px 0 20px 0;
+    color: white;
+}
+.navbar > a {
+    color: white;
+    padding: 20px;
+    text-decoration: unset;
+    margin: 10px;
+}
+.navbar > a:hover {
+    color: rgb(79, 77, 77);
+    background-color:rgb(206, 204, 204);
+}
+.main-container {
+    margin: auto;
+    width: 1300px;
+    display: grid;
+    grid-template-columns: 70% auto;
+    gap: 100px;
+}
+.title {
+    border-bottom: 2px solid rgb(153, 151, 151);
+    padding: 20px 0 20px 0;
+}
+h1, p {
+    padding: 20px 0 20px 0;
+}
+.img {
+    background-color: antiquewhite;
+    height: 550px;
+    width: 90%;
+}
+.categories {
+    padding: 20px 0 20px 40px;
+}
+.categories > ul > li > a:hover {
+    font-size: 20px;
+}
