@@ -39,8 +39,9 @@ header > a {
 }
 .main-container {
     display: grid;
-    grid-template-columns: 30% auto;
-    gap: 50px;
+    grid-template-columns: 30% 70%;
+    grid-template-columns: 3fr 7fr;
+    grid-column-gap: 50px;
 }
 
 .list-video {
