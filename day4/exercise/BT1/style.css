@@ -1,8 +1,11 @@
 /** @format */
 
-* {
+/* * {
   margin: 0;
   padding: 0;
+} */
+.main {
+  height: 800px;
 }
 .sidebar-container {
   background-color: rgb(38, 38, 38);
