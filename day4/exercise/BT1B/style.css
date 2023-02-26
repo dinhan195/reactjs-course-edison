@@ -1,0 +1,14 @@
+/** @format */
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.nav-bar-side,
+.side-bar {
+  background-color: gray;
+}
+.nav-bar-side > img {
+  width: 50px;
+}

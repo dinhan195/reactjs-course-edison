@@ -1,0 +1,33 @@
+/** @format */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.nav-side,
+.side-main {
+  color: aliceblue;
+  background-color: rgb(48, 48, 48);
+}
+.nav-side,
+.side-bar-user {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid gray;
+}
+.nav-side > img,
+.side-bar-user > img {
+  width: 50px;
+  border-radius: 50%;
+}
+.side-main > .input-group {
+  background-color: rgb(48, 48, 48);
+  margin-top: 15px;
+}
+.side-main > .input-group > input {
+  background-color: rgb(48, 48, 48);
+}
+.main-content {
+  background-color: rgb(109, 110, 112);
+}
