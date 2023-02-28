@@ -20,40 +20,54 @@
   </head>
   <body>
     <div class="container-fluid">
-      <div class="row border-dark">
-        <!-- sidebar -->
-        <aside
-          class="sidebar-container col-md-2 d-none d-sm-none d-md-block text-white">
-          <div class="sidebar-nav border-bottom px-4 py-2">
+      <div class="row">
+        <!-- Sider bar -->
+        <div
+          class="sidebar-container col-md-2 text-light d-sm-none d-none d-md-block">
+          <!-- sidebar nav -->
+          <div class="sidebar-nav border-bottom">
             <img
-              class="rounded-circle"
+              class="rounded-circle w-25 my-1 me-2"
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8JxtRkhEYGBuAH7syq8WHvnTuueI64xrdrYDCc0_O8aRzWqU3jmx6GiswXVfqebx7s2M&usqp=CAU"
               alt="" />
             <span>Admin</span>
           </div>
-          <section class="sidebar-main">
-            <div class="sidebar-main-user border-bottom py-3 px-4">
+
+          <div class="sidebar-main">
+            <div class="sidebar-user py-2 border-bottom">
               <img
-                class="rounded-circle"
+                class="rounded-circle w-25 me-2"
                 src="https://i.pinimg.com/736x/0c/09/87/0c0987a7a99a61b981c804312d8569ec.jpg"
                 alt="" />
               <span>Nguyễn Thị B</span>
             </div>
-          </section>
-
-          <div class="row dropdown mx-1 fs-5 pt-3">
+          </div>
+          <!-- input search -->
+          <div class="input-group my-2 mx-0">
+            <input
+              type="text"
+              class="form-control input-search border-secondary"
+              placeholder="Search"
+              aria-describedby="button-addon2" />
+            <button
+              class="btn btn-outline-secondary"
+              type="button"
+              id="button-addon2">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
+          <!-- button trang chủ -->
+          <div class="row input-group mx-auto">
             <span
-              class="btn-primary rounded-3 p-2"
+              class="btn-primary p-2 rounded-3"
               type="button"
               id="dropdownMenuButton1"
               data-bs-toggle="dropdown"
-              aria-expanded="false"
               ><i class="fa-solid fa-clock"></i> Trang chủ
               <span class="dropdown-toggle float-end"></span>
             </span>
-
             <ul
-              class="dropdown-menu w-100 bg-secondary"
+              class="dropdown-menu bg-secondary"
               aria-labelledby="dropdownMenuButton1">
               <li>
                 <a class="dropdown-item text-light" href="#">◯ Đăng xuất</a>
@@ -63,7 +77,8 @@
               </li>
             </ul>
           </div>
-          <div class="row dropdown mx-1 fs-5 my-2">
+          <!-- Quarn lý sản phẩm -->
+          <div class="row dropdown mx-auto">
             <span
               class="btn-secondary rounded-3 p-2"
               type="button"
@@ -85,15 +100,23 @@
               </li>
             </ul>
           </div>
-        </aside>
-        <!-- /sidebar -->
-        <main class="main-container col-md-10 col-sm-12 p-0 fs-4 border-top">
-          <nav class="nav-bar">
-            <nav class="navbar navbar-expand-lg">
+        </div>
+        <!-- main -->
+        <div class="main-container col-md-10 col-sm-12 p-0">
+          <!-- navbar main -->
+          <div class="navbar-main">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
               <div class="container-fluid">
-                <a class="navbar-brand text-secondary" href="#"
-                  ><i class="fa-solid fa-bars"></i
-                ></a>
+                <button
+                  class="border-0"
+                  type="button"
+                  data-bs-toggle=""
+                  data-bs-target=""
+                  aria-controls=""
+                  aria-expanded="false"
+                  aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
                 <button
                   class="navbar-toggler"
                   type="button"
@@ -107,52 +130,52 @@
                 <div
                   class="collapse navbar-collapse"
                   id="navbarSupportedContent">
-                  <ul class="navbar-nav me-auto mb-lg-0">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                      <a
-                        class="nav-link text-secondary"
-                        aria-current="page"
-                        href="#"
+                      <a class="nav-link active" aria-current="page" href="#"
                         >Trang chủ</a
                       >
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link text-secondary" href="#">Đăng xuất</a>
+                      <a class="nav-link active" href="#">Đăng xuất</a>
                     </li>
                   </ul>
-
-                  <button class="btn d-flex fs-4 text-secondary" type="search">
+                  <button class="btn d-flex" type="submit">
                     <i class="fa-solid fa-magnifying-glass"></i>
                   </button>
                 </div>
               </div>
             </nav>
-          </nav>
-          <!-- /nav bar main -->
-          <section class="main border-bottom">
-            <div class="container-fluid bg-light">
-              <div class="row pt-4">
-                <a href="" class="col-6 text-decoration-none text-dark"
-                  >Trang chủ</a
-                >
-                <a
-                  href=""
-                  class="col-1 float-end text-black offset-5 text-decoration-none text-dark fs-5 d-none d-sm-none d-md-block"
-                  >Trang chủ</a
-                >
-              </div>
-              <div class="row my-5 d-flex flex-wrap">
-                <div class="col-12 col-sm-6 col-md-3 h-100">
-                  <div class="card text-white bg-info mb-3 fs-5">
-                    <div class="row">
-                      <div class="card-body col-4 px-4">
-                        <h1 class="card-title">150</h1>
-                        <p class="card-text">New Order</p>
+          </div>
+          <!-- main -->
+          <div class="main">
+            <!-- link -->
+            <div class="main-link d-flex justify-content-between m-2">
+              <a class="text-decoration-none fs-5 text-dark" href="#"
+                >Trang chủ</a
+              >
+              <a
+                class="text-decoration-none text-dark d-sm-none d-none d-md-block"
+                href="#"
+                >Trang chủ</a
+              >
+            </div>
+            <!-- contents -->
+            <div class="main-content">
+              <div class="row m-3">
+                <div class="col-md-3 col-sm-6">
+                  <div
+                    class="card text-white bg-info mb-3"
+                    style="max-width: 18rem">
+                    <div class="card-body row">
+                      <div class="col-8">
+                        <h4 class="card-title">150</h4>
+                        <p class="card-text">New Orders</p>
                       </div>
-                      <div class="card-image col-4 mx-3 my-4">
+                      <div class="col-4">
                         <i
                           class="fa-solid fa-bag-shopping"
-                          style="font-size: 90px; opacity: 0.6"></i>
+                          style="font-size: 70px; opacity: 0.5"></i>
                       </div>
                     </div>
                     <div class="card-header text-center">
@@ -160,17 +183,19 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-12 col-sm-6 col-md-3">
-                  <div class="card text-white bg-success mb-3 fs-5">
-                    <div class="row">
-                      <div class="card-body col-4 px-4">
-                        <h1 class="card-title">53%</h1>
-                        <p class="card-text">Bounce Rate</p>
+                <div class="col-md-3 col-sm-6">
+                  <div
+                    class="card text-white bg-success mb-3"
+                    style="max-width: 18rem">
+                    <div class="card-body row">
+                      <div class="col-8">
+                        <h4 class="card-title">53%</h4>
+                        <p class="card-text">Some quick</p>
                       </div>
-                      <div class="card-image col-4 mx-3 my-4">
+                      <div class="col-4">
                         <i
                           class="fa-solid fa-chart-simple"
-                          style="font-size: 90px; opacity: 0.6"></i>
+                          style="font-size: 70px; opacity: 0.5"></i>
                       </div>
                     </div>
                     <div class="card-header text-center">
@@ -178,17 +203,19 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-12 col-sm-6 col-md-3">
-                  <div class="card text-black-50 bg-warning mb-3 fs-5">
-                    <div class="row">
-                      <div class="card-body col-4 px-4">
-                        <h1 class="card-title">44</h1>
-                        <p class="card-text">User Registrations</p>
+                <div class="col-md-3 col-sm-6">
+                  <div
+                    class="card text-white bg-warning mb-3"
+                    style="max-width: 18rem">
+                    <div class="card-body row">
+                      <div class="col-8">
+                        <h4 class="card-title">44</h4>
+                        <p class="card-text">Registrations</p>
                       </div>
-                      <div class="card-image col-4 mx-3 my-4">
+                      <div class="col-4">
                         <i
                           class="fa-solid fa-user-plus"
-                          style="font-size: 90px; opacity: 0.6"></i>
+                          style="font-size: 70px; opacity: 0.5"></i>
                       </div>
                     </div>
                     <div class="card-header text-center">
@@ -196,17 +223,19 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-12 col-sm-6 col-md-3">
-                  <div class="card text-white bg-danger mb-3 fs-5">
-                    <div class="row">
-                      <div class="card-body col-4 px-4">
-                        <h1 class="card-title">65</h1>
-                        <p class="card-text">Unique Visitors</p>
+                <div class="col-md-3 col-sm-6">
+                  <div
+                    class="card text-white bg-danger mb-3"
+                    style="max-width: 18rem">
+                    <div class="card-body row">
+                      <div class="col-8">
+                        <h4 class="card-title">65</h4>
+                        <p class="card-text">Uniqu Visitors</p>
                       </div>
-                      <div class="card-image col-4 mx-3 my-4">
+                      <div class="col-4">
                         <i
                           class="fa-solid fa-chart-pie"
-                          style="font-size: 90px; opacity: 0.6"></i>
+                          style="font-size: 70px; opacity: 0.5"></i>
                       </div>
                     </div>
                     <div class="card-header text-center">
@@ -216,11 +245,11 @@
                 </div>
               </div>
             </div>
-          </section>
-          <footer class="col-12 bg-white border-dark p-3">
+          </div>
+          <footer class="col-12 bg-white border-dark p-2">
             <h4>Copyright © 2022</h4>
           </footer>
-        </main>
+        </div>
       </div>
     </div>
   </body>

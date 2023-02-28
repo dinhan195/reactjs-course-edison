@@ -1,0 +1,391 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous" />
+    <link
+      rel="stylesheet"
+      href="https://kit.fontawesome.com/fdd7b1cc92.css"
+      crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <!-- Sider bar -->
+        <div
+          class="sidebar-container col-md-2 text-light d-sm-none d-none d-md-block">
+          <!-- sidebar nav -->
+          <div class="sidebar-nav border-bottom">
+            <img
+              class="rounded-circle w-25 my-1 me-2"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8JxtRkhEYGBuAH7syq8WHvnTuueI64xrdrYDCc0_O8aRzWqU3jmx6GiswXVfqebx7s2M&usqp=CAU"
+              alt="" />
+            <span>Admin</span>
+          </div>
+
+          <div class="sidebar-main">
+            <div class="sidebar-user py-2 border-bottom">
+              <img
+                class="rounded-circle w-25 me-2"
+                src="https://i.pinimg.com/736x/0c/09/87/0c0987a7a99a61b981c804312d8569ec.jpg"
+                alt="" />
+              <span>Nguyễn Thị B</span>
+            </div>
+          </div>
+          <!-- input search -->
+          <div class="input-group my-2 mx-0">
+            <input
+              type="text"
+              class="form-control input-search border-secondary"
+              placeholder="Search"
+              aria-describedby="button-addon2" />
+            <button
+              class="btn btn-outline-secondary"
+              type="button"
+              id="button-addon2">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
+          <!-- button trang chủ -->
+          <div class="row input-group mx-auto">
+            <span
+              class="btn-primary p-2 rounded-3"
+              type="button"
+              id="dropdownMenuButton1"
+              data-bs-toggle="dropdown"
+              ><i class="fa-solid fa-clock"></i> Trang chủ
+              <span class="dropdown-toggle float-end"></span>
+            </span>
+            <ul
+              class="dropdown-menu bg-dark"
+              aria-labelledby="dropdownMenuButton1">
+              <li>
+                <a class="dropdown-item text-light" href="#">◯ Đăng xuất</a>
+              </li>
+              <li>
+                <a class="dropdown-item text-light" href="#">◯ Quay lại</a>
+              </li>
+            </ul>
+          </div>
+          <!-- Quarn lý sản phẩm -->
+          <div class="row dropdown mx-auto my-2">
+            <span
+              class="btn-secondary rounded-3 p-2"
+              type="button"
+              id="dropdownMenuButton1"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              ><i class="fa-solid fa-chart-pie"></i> Quản lý sản phẩm
+              <span class="dropdown-toggle float-end"></span>
+            </span>
+
+            <ul
+              class="dropdown-menu w-100 bg-dark"
+              aria-labelledby="dropdownMenuButton1">
+              <li>
+                <a class="dropdown-item text-light" href="#">◯ Danh sách</a>
+              </li>
+              <li>
+                <a class="dropdown-item text-light" href="#">◯ Thêm mới</a>
+              </li>
+            </ul>
+          </div>
+          <!-- Quản lý người dùng -->
+          <div class="row dropdown mx-auto">
+            <span
+              class="btn btn-outline-secondary rounded-3 p-2 text-white"
+              type="button"
+              id="dropdownMenuButton1"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              ><i class="fa-solid fa-user-plus"></i> Quản lý người dùng
+              <span class="dropdown-toggle float-end"></span>
+            </span>
+
+            <ul
+              class="dropdown-menu w-100 bg-dark"
+              aria-labelledby="dropdownMenuButton1">
+              <li>
+                <a class="dropdown-item text-light" href="#">◯ Danh sách</a>
+              </li>
+              <li>
+                <a class="dropdown-item text-light" href="#">◯ Thêm mới</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- main -->
+        <div class="main-container col-md-10 col-sm-12 p-0 m-0">
+          <!-- navbar main -->
+          <div class="navbar-main">
+            <nav class="navbar navbar-expand-lg navbar-light">
+              <div class="container-fluid">
+                <button
+                  class="border-0"
+                  type="button"
+                  data-bs-toggle=""
+                  data-bs-target=""
+                  aria-controls=""
+                  aria-expanded="false"
+                  aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarSupportedContent"
+                  aria-controls="navbarSupportedContent"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div
+                  class="collapse navbar-collapse"
+                  id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#"
+                        >Trang chủ</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" href="#">Đăng xuất</a>
+                    </li>
+                  </ul>
+                  <button class="btn d-flex" type="submit">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </button>
+                </div>
+              </div>
+            </nav>
+          </div>
+          <!-- main -->
+          <div class="main">
+            <!-- link -->
+            <div class="main-link d-flex justify-content-between m-2">
+              <a class="text-decoration-none fs-2 text-dark" href="#"
+                >Thêm mới sản phẩm</a
+              >
+
+              <a
+                class="text-decoration-none text-dark d-sm-none d-none d-md-block"
+                href="#"
+                >Trang chủ</a
+              >
+            </div>
+            <!-- contents -->
+            <div class="row main-content mx-2">
+              <div class="col-md-8 col-sm-12">
+                <div class="info-product card">
+                  <h4 class="border-bottom p-2">Thông tin sản phẩm</h4>
+                  <form class="mx-3">
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label"
+                        >Tên sản phẩm (*)</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="exampleInputEmail1"
+                        aria-describedby="emailHelp" />
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label"
+                        >Mô tả ngắn (*)</label
+                      >
+                      <textarea
+                        class="form-control"
+                        id="floatingTextarea2"
+                        style="height: 100px"></textarea>
+                    </div>
+                    <div class="editor my-3">
+                      <label for="">Chi tiết (*)</label>
+                      <div class="button-are border rounded-2 h-25">
+                        <button
+                          type="button"
+                          class="btn btn-outline-secondary m-2">
+                          <i class="fa-solid fa-wand-magic-sparkles"></i>
+                        </button>
+                        <div
+                          class="btn-group"
+                          role="group"
+                          aria-label="Basic example">
+                          <button
+                            type="button"
+                            class="btn btn-outline-secondary">
+                            <i class="fa-solid fa-bold"></i>
+                          </button>
+                          <button
+                            type="button"
+                            class="btn btn-outline-secondary">
+                            <i class="fa-solid fa-eraser"></i>
+                          </button>
+                          <button
+                            type="button"
+                            class="btn btn-outline-secondary">
+                            <i class="fa-solid fa-bell"></i>
+                          </button>
+                        </div>
+                        <button
+                          class="btn btn-outline-secondary dropdown-toggle"
+                          type="button"
+                          id="dropdownMenuButton2"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false">
+                          Dropdown button
+                        </button>
+                        <button
+                          type="button"
+                          class="btn btn-outline-secondary m-2">
+                          <i class="fa-solid fa-wand-magic-sparkles"></i>
+                        </button>
+                        <div
+                          class="btn-group"
+                          role="group"
+                          aria-label="Basic example">
+                          <button
+                            type="button"
+                            class="btn btn-outline-secondary">
+                            <i class="fa-solid fa-bold"></i>
+                          </button>
+                          <button
+                            type="button"
+                            class="btn btn-outline-secondary">
+                            <i class="fa-solid fa-eraser"></i>
+                          </button>
+                          <button
+                            type="button"
+                            class="btn btn-outline-secondary">
+                            <i class="fa-solid fa-bell"></i>
+                          </button>
+                        </div>
+                        <button
+                          type="button"
+                          class="btn btn-outline-secondary m-2">
+                          <i class="fa-solid fa-wand-magic-sparkles"></i>
+                        </button>
+                        <button
+                          type="button"
+                          class="btn btn-outline-secondary m-2">
+                          <i class="fa-solid fa-wand-magic-sparkles"></i>
+                        </button>
+                        <button
+                          class="btn btn-outline-secondary dropdown-toggle"
+                          type="button"
+                          id="dropdownMenuButton2"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false">
+                          A
+                        </button>
+                        <button
+                          type="button"
+                          class="btn btn-outline-secondary m-2">
+                          <i class="fa-solid fa-pen"></i>
+                        </button>
+                        <button
+                          type="button"
+                          class="btn btn-outline-secondary m-2">
+                          <i class="fa-solid fa-camera-retro"></i>
+                        </button>
+                        <button
+                          type="button"
+                          class="btn btn-outline-secondary m-2">
+                          <i class="fa-solid fa-wand-magic-sparkles"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <div class="data-product card my-3">
+                  <h4 class="border-bottom p-2">Dữ liệu sản phẩm</h4>
+                  <div class="m-2 row">
+                    <label for="inputPassword" class="col-sm-2 col-form-label"
+                      >Giá bán(*) (VND)</label
+                    >
+                    <div class="col-sm-10">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="inputPassword" />
+                    </div>
+                  </div>
+                  <div class="m-2 row my-3">
+                    <label for="inputPassword" class="col-sm-2 col-form-label"
+                      >Trạng thái(*)</label
+                    >
+                    <div class="col-sm-10">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="inputPassword" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-12 my-3">
+                <div class="type-product card">
+                  <h4 class="border-bottom p-2">Thể loại sản phẩm</h4>
+                  <label class="mx-3">Chọn thể loại(*)</label>
+                  <select class="border rounded-2 m-3 p-1" name="" id="">
+                    <option value="">Diện thoại</option>
+                    <option value="">Lap top</option>
+                    <option value="">Tivi</option>
+                    <option value="">Máy tính</option>
+                  </select>
+                </div>
+                <div class="avatar card my-3">
+                  <h4 class="border-bottom p-2">Ảnh đại diện</h4>
+                  <div class="title mx-3 mb-3">
+                    <h5>Chọn ảnh(*)</h5>
+                    <p>Định dạng: jpg, png, jpeg, gì, svg-Kích cỡ < 2MB</p>
+                    <div class="input-group">
+                      <input
+                        class="form-control"
+                        placeholder="Choose file"
+                        aria-label="Recipient's username"
+                        aria-describedby="basic-addon2" />
+                      <span
+                        typp="file"
+                        class="input-group-text"
+                        id="basic-addon2"
+                        >Browser</span
+                      >
+                      <span class="input-group-text" id="basic-addon2"
+                        >Upload</span
+                      >
+                    </div>
+                  </div>
+                </div>
+                <button type="button" class="btn btn-primary px-5">Lưu</button>
+                <button type="button" class="btn btn-outline-secondary">
+                  Hủy
+                </button>
+              </div>
+            </div>
+          </div>
+          <footer class="col-12 bg-white border-dark p-2">
+            <h4>Copyright © 2022</h4>
+          </footer>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script
+    src="https://kit.fontawesome.com/fdd7b1cc92.js"
+    crossorigin="anonymous"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</html>
