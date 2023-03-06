@@ -9,3 +9,6 @@ function reverseString(string) {
 }
 
 reverseString('hello there');
+
+let string = 'hello there';
+string.join('');
