@@ -2,7 +2,7 @@
 
 function convertNumber(number) {
   // Coding here
-  return number.toString(2);
+  return parseInt(number, 2);
 }
 
 console.log(convertNumber(47));

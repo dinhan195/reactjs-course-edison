@@ -1,0 +1,66 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loan Calculator</title>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <th>Nhập thông tin khoản vay</th>
+      </tr>
+      <tr>
+        <td>1) Số tiền:</td>
+        <td><input type="number" id="money1" placeholder="0" /></td>
+      </tr>
+      <tr>
+        <td>2) Lãi suất hàng năm (%):</td>
+        <td><input type="number" id="money2" placeholder="0" /></td>
+      </tr>
+      <tr>
+        <td>3) Thời gian trả (năm):</td>
+        <td><input type="number" id="money3" placeholder="0" /></td>
+      </tr>
+
+      <tr>
+        <td><button id="button" type="submit">Tính</button></td>
+      </tr>
+
+      <tr>
+        <th>Thông tin thanh toán:</th>
+      </tr>
+      <tr>
+        <td>4) Số tiền phải trả hàng tháng:</td>
+        <td><input type="number" id="money4" placeholder="0" /></td>
+      </tr>
+      <tr>
+        <td>5) Tổng số tiền phải trả:</td>
+        <td><input type="number" id="money5" placeholder="0" /></td>
+      </tr>
+      <tr>
+        <td>6) Tổng số lãi phải trả:</td>
+        <td><input type="number" id="money6" placeholder="0" /></td>
+      </tr>
+    </table>
+  </body>
+  <script>
+    document.getElementById('button').addEventListener('click', function (e) {
+      e.preventDefault();
+      const money1 = document.getElementById('money1').value;
+      const money2 = document.getElementById('money2').value;
+      const money3 = document.getElementById('money3').value;
+      let cvMoney2 = money2 / 100;
+      let cvMoney3 = money3 * 12;
+      let money4 = (money1 / cvMoney3) * ((money1 * cvMoney2) / 12);
+      document.getElementById('money4').value = Math.round(money4);
+      document.getElementById('money5').value = Math.round(money4 * cvMoney3);
+      document.getElementById('money6').value = Math.round(
+        money4 * cvMoney3 - money1
+      );
+    });
+  </script>
+</html>

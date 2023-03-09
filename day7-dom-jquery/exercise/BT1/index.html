@@ -1,0 +1,88 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calulator BMI</title>
+  </head>
+  <style>
+    form {
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+        sans-serif;
+      width: 400px;
+      margin: auto;
+      background-color: rgb(246, 244, 244);
+      border-radius: 10px;
+      padding: 20px 30px 40px 30px;
+      box-sizing: border-box;
+    }
+    h1 {
+      text-align: center;
+    }
+    form > input {
+      display: block;
+      width: 100%;
+      padding: 10px 15px;
+      box-sizing: border-box;
+      border-radius: 4px;
+      border: 1px solid rgb(131, 131, 131);
+    }
+    label {
+      display: block;
+      margin: 17px 0 7px 0;
+    }
+    #female {
+      margin-left: 25px;
+    }
+    .output-group {
+      margin-top: 20px;
+      text-align: center;
+    }
+    .output-group > button {
+      padding: 10px 20px;
+      border-radius: 5px;
+      color: white;
+      background-color: rgb(30, 133, 224);
+      border: none;
+    }
+    .output-group > button:hover {
+      background-color: rgb(22, 22, 245);
+    }
+    .output {
+      margin-top: 20px;
+      background-color: rgb(194, 192, 192);
+      border-radius: 10px;
+      padding: 15px 0;
+      box-sizing: border-box;
+    }
+    .output > p,
+    .output > h1 {
+      margin: 0;
+    }
+  </style>
+  <body>
+    <form>
+      <h1>ĐO CHỈ SỐ (BMI)</h1>
+      <label>Chiều cao</label>
+      <input type="number" id="height" placeholder="Tính theo m" required />
+      <label>Cân nặng</label>
+      <input type="number" id="weight" placeholder="Tính theo kg" required />
+      <div class="input-gender">
+        <label for="">Giới tính</label>
+        <input type="radio" name="gender" id="male" /><span>Nam</span>
+        <input type="radio" name="gender" id="female" /><span>Nữ</span>
+      </div>
+      <div class="output-group">
+        <button id="btn-calculator" type="submit">Tính BMI</button>
+        <div class="output">
+          <p>KẾT QUẢ</p>
+          <h1>_</h1>
+        </div>
+      </div>
+    </form>
+  </body>
+  <script src="script.js"></script>
+</html>
