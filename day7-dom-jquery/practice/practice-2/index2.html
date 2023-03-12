@@ -29,13 +29,14 @@
       <button id="btnScrollTop">Scroll Top</button>
     </div>
 
-    <!-- <script>
+    <script>
       let control = document.querySelector('#control');
 
       control.addEventListener('click', function (e) {
         let div = document.getElementById('scrollDemo');
-        let target = e.target;
-        switch (target.id) {
+        let button = e.target;
+        console.log(button.id);
+        switch (button.id) {
           case 'btnScrollLeft':
             div.scrollLeft += 20;
             break;
@@ -45,6 +46,6 @@
             break;
         }
       });
-    </script> -->
+    </script>
   </body>
 </html>

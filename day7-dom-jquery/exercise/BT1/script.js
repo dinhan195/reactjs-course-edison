@@ -66,3 +66,4 @@ function renderResult(bmi, message) {
     1
   )}</span><span>|</span><span>${message}</span>`;
 }
+function hasValue(value) {}

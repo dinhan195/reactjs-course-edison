@@ -1,0 +1,24 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JavaScript Focus Events</title>
+  </head>
+  <body>
+    <h1>Todo list</h1>
+    <ul>
+      <li>Buy groceries</li>
+      <li>Feed the cat</li>
+      <li>Do laundry</li>
+    </ul>
+
+    <script>
+      const ulElement = document.querySelector('ul');
+      const liElement = document.createElement('li');
+      liElement.innerText = 'Todo test';
+      ulElement.appendChild(liElement); //Thêm phần tử con trong cha
+      ulElement.children[1].innerHTML = 'dfkjsdg'; //sữa  phần tử con
+    </script>
+  </body>
+</html>

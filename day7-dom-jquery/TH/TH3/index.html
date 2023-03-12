@@ -1,0 +1,29 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>JavaScript Form Demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <style>
+    /* #form > input[type='password'] {
+      background-color: yellow;
+    } */
+  </style>
+  <body>
+    <p>Move focus to the password field to see the effect:</p>
+
+    <form id="form">
+      <input type="text" placeholder="username" />
+      <input type="password" placeholder="password" />
+    </form>
+    <script src="">
+      const password = document.querySelector("#form > input[type='password']");
+      password.addEventListener('focus', function () {
+        password.style.backgroundColor = 'yellow';
+      });
+    </script>
+  </body>
+</html>
