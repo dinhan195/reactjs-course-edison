@@ -1,0 +1,46 @@
+/** @format */
+
+.container {
+  width: 300px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  margin: auto;
+  font-family: 'Golos Text', sans-serif;
+  padding: 0 20px 20px 20px;
+  box-sizing: border-box;
+}
+.container h1 {
+  text-align: center;
+}
+.form-control {
+  margin-top: 15px;
+}
+.form-control input {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  padding: 8px;
+  border-radius: 3px;
+  outline: none;
+  border: 1px solid gray;
+  margin-top: 4px;
+}
+#button {
+  width: 100%;
+  background-color: rgb(4, 107, 211);
+  padding: 7px;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  margin-top: 20px;
+}
+#button:hover {
+  background-color: rgb(4, 80, 173);
+  transition: 0.8;
+}
+.error input {
+  border: 1px solid red;
+}
+.error small {
+  color: red;
+}
