@@ -1,0 +1,89 @@
+/** @format */
+
+:root {
+  --bg_main: #0a1f44;
+  --text_light: #fff;
+  --text_med: #53627c;
+  --text_dark: #1e2432;
+  --red: #ff1e42;
+  --darkred: #c3112d;
+  --orange: #ff8c00;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  padding: 70px;
+  background-color: var(--bg_main);
+  color: var(--text_light);
+
+  font-family: sans-serif;
+}
+h1 {
+  font-size: 60px;
+}
+.search {
+  margin: 30px 0;
+}
+.input-search {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  outline: none;
+  color: var(--text_light);
+  border-bottom: 1px solid var(--text_light);
+  font-size: 2rem;
+  padding: 5px;
+}
+::placeholder {
+  color: var(--text_light);
+}
+.button-search {
+  padding: 15px 23px;
+  border-radius: 5px;
+  border: none;
+  background-color: var(--red);
+  color: var(--text_light);
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+}
+.button-search:hover {
+  background-color: var(--darkred);
+}
+
+.main-app {
+  display: grid;
+  grid-template-columns: 300px 300px 300px 300px;
+  grid-gap: 30px;
+}
+.weather-city {
+  background-color: var(--text_light);
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 15px gray;
+}
+.city-name {
+  color: var(--text_med);
+  box-sizing: border-box;
+}
+.city-temp {
+  color: var(--text_dark);
+  font-size: 70px;
+  font-weight: bold;
+}
+.city-clouds {
+  color: var(--text_med);
+  font-weight: bold;
+  margin-top: 20px;
+}
+.message {
+  display: block;
+}
+.country {
+  background-color: #ff8c00;
+  border-radius: 7px;
+  font-size: 15px;
+  padding: 3px;
+}

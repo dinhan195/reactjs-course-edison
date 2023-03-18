@@ -1,0 +1,76 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Pokemon</title>
+  </head>
+  <style>
+    .container {
+      display: flex;
+    }
+    .detail-item {
+      margin: 50px 100px;
+    }
+    .img-item {
+      width: 200px;
+      border: 1px solid gray;
+      border-radius: 10px;
+
+      box-sizing: border-box;
+    }
+    .btn-details {
+      margin: 30px;
+    }
+    .btn-details button {
+      padding: 5px;
+      border-radius: 5px;
+    }
+    .btn-details button:first-child {
+      background-color: green;
+    }
+    .btn-details button:last-child {
+      background-color: palevioletred;
+    }
+    .item {
+      border: 1px solid black;
+      background-color: gray;
+    }
+    ol {
+      background-color: antiquewhite;
+      margin: 10px;
+    }
+    p {
+      margin: 10px;
+    }
+    .list-item button {
+      display: block;
+      margin: 10px;
+      width: 150px;
+      text-align: start;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="detail-item">
+        <img
+          class="img-item"
+          src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/132.png"
+          alt=""
+          width="100%" />
+        <div class="btn-details">
+          <button id="type">GRASS</button>
+          <button id="name">Name</button>
+        </div>
+      </div>
+      <div>
+        <div class="list-item"></div>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
