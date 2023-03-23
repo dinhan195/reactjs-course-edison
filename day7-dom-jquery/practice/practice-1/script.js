@@ -8,13 +8,6 @@ const button = document.querySelector('button');
 form.addEventListener('submit', function (event) {
   event.preventDefault();
   const input = document.querySelector('input');
-  if (todoIndex === null) {
-    todos.push(input.value);
-  } else {
-    todos[todoIndex] = input.value;
-    button.innerText = 'Add';
-    todoIndex = null;
-  }
 
   input.value = '';
   render();

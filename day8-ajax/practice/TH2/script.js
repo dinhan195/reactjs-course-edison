@@ -3,7 +3,8 @@ const todoList = document.querySelector('ul');
 const btnBack = document.querySelector('#back');
 const btnNext = document.querySelector('#next');
 const form = document.querySelector('form');
-
+const button = document.querySelector('button[type="submit"]');
+let todoIndex = null;
 btnBack.addEventListener('click', backPage);
 btnNext.addEventListener('click', nextPage);
 form.addEventListener('submit', addTodo);
@@ -30,34 +31,33 @@ function addTodo(event) {
   event.preventDefault();
   const input = document.querySelector('input');
   let title = input.value.trim();
-  const li = document.createElement('li');
-  li.innerHTML = title;
-  todoList.appendChild(li);
 
-  let params = {
-    userId: 2,
-    title: title,
-    completed: false,
-  };
-
-  addTodoList(params);
-  input.value = '';
+  if (todoIndex === null) {
+    todos.push(title);
+    let params = {
+      userId: 2,
+      title: title,
+      completed: false,
+    };
+    addTodoList(params);
+    input.value = '';
+    renderTodo();
+  } else {
+    todos[todoIndex] = title;
+    button.innerText = 'Add';
+    todoIndex = null;
+  }
 }
 
 function renderTodo() {
   const todo = todos.map((todo, index) => {
     return `<li>${todo.title}
-    <button id="edit" >Edit</button>
+    <button id="edit" onclick="updateTodo(${todo.id}, '${todo.title}')">Edit</button>
     <button id="delete" onclick="removeTodo(${todo.id})">Delete</button>
     </li>
     `;
   });
 
-  // let editTask = (e) => {
-  //   let selectedTask = e.parentElement.parentElement;
-
-  //   textInput.value = input.value.innerHTML;
-  // };
   todoList.innerHTML = todo.join('');
   let btnRemove = document.querySelectorAll('#delete');
   btnRemove.forEach((todo, index) => {
@@ -66,6 +66,14 @@ function renderTodo() {
       removeTodoView(index);
     });
   });
+}
+
+function updateTodo(id, title) {
+  button.innerText = 'Edit';
+  const input = document.querySelector('input');
+  input.value = title;
+  todoIndex = id;
+  renderTodo();
 }
 function removeTodoView(index) {
   todos.splice(index, 1);
