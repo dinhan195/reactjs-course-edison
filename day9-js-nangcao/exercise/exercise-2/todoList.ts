@@ -20,7 +20,7 @@ class ToDo {
 class ToDoList {
   constructor() {
   }
-  checkDayDouplecate(todos: object[]): any {
+  checkDayDoublecate(todos: object[]): any {
     let dayTodo = todos.map((todo: any, index: any, []) => {
       return todo.date
     })
@@ -45,4 +45,4 @@ todo3.addTodoWork()
 
 let todoList = new ToDoList();
 console.log(
-  todoList.checkDayDouplecate(todos));
+  todoList.checkDayDoublecate(todos));

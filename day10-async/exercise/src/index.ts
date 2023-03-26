@@ -5,10 +5,9 @@ let getData = async (id: number) => {
       const listData = await axios.get('https://pokeapi.co/api/v2/pokemon')
       console.log(listData.data.results)
       const dataDetails: any = await axios.get(`https://pokeapi.co/api/v2/pokemon/${id}`)
-      console.log();
-      console.log('image:', dataDetails.data.sprites.back_default)
-      console.log('name:', dataDetails.data.name);
-      console.log('type:', dataDetails.data.types[0].name);
+      console.log('Image:', dataDetails.data.sprites.back_default)
+      console.log('Name:', dataDetails.data.name);
+      console.log('Type:', dataDetails.data.types[0].type.name);
    } catch (error) {
       console.log(error);
    }

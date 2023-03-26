@@ -18,9 +18,9 @@ let getData = (id) => __awaiter(void 0, void 0, void 0, function* () {
         const listData = yield axios_1.default.get('https://pokeapi.co/api/v2/pokemon');
         console.log(listData.data.results);
         const dataDetails = yield axios_1.default.get(`https://pokeapi.co/api/v2/pokemon/${id}`);
-        console.log('image:', dataDetails.data.sprites.back_default);
-        console.log('name:', dataDetails.data.name);
-        console.log('type:', dataDetails.data.types[0].name);
+        console.log('Image:', dataDetails.data.sprites.back_default);
+        console.log('Name:', dataDetails.data.name);
+        console.log('Type:', dataDetails.data.types[0].type.name);
     }
     catch (error) {
         console.log(error);
