@@ -1,0 +1,1 @@
+export  const Base64Photo = 'https://images.unsplash.com/photo-1593466144596-8abd50ad2c52?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGltYWdlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60'

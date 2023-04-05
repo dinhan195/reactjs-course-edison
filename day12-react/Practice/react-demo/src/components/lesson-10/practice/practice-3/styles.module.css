@@ -1,0 +1,32 @@
+/** @format */
+.formContainer {
+  width: 400px;
+  border: 1px solid gray;
+  border-radius: 10px;
+  padding: 20px;
+}
+.formTitle {
+  text-align: center;
+  color: rgb(12, 99, 230);
+}
+.formField .formLabel {
+  display: block;
+  margin-top: 5px;
+}
+.formField .formInput {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 5px;
+  border-radius: 3px;
+  border: 1px solid blue;
+  margin: 5px 0;
+}
+.buttonSubmit {
+  display: block;
+  margin-top: 10px;
+  padding: 10px 40px;
+  background-color: lightblue;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}

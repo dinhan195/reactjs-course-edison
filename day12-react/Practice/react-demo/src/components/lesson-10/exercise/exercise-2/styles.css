@@ -1,0 +1,14 @@
+/** @format */
+
+.day {
+  width: 200px;
+  height: 200px;
+  background-color: blue;
+  margin-top: 20px;
+}
+.night {
+  width: 200px;
+  height: 200px;
+  background-color: rgb(13, 13, 13);
+  margin-top: 20px;
+}

@@ -1,0 +1,13 @@
+/** @format */
+
+.container {
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
+.leftSide {
+  background-color: blue;
+  height: 100vh;
+}
+.rightSide {
+  background-color: red;
+}
