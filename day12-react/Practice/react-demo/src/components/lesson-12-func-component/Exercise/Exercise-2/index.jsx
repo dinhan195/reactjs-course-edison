@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 
 
 function SetTime() {
-  const [time, setTime] = useState(0);
+  const [time, setTime] = useState(1);
   const [message, setMessage] = useState()
 
   useEffect(() => {
