@@ -15,7 +15,6 @@ function SetTime() {
     }
   }, [time]);
  
- 
 
   return (
     <div>
