@@ -12,27 +12,55 @@ import Admin from './components/lesson-13-router/Exercise/Exercise-1/Admin';
 import HomePage from './components/lesson-13-router/Exercise/Exercise-2/HomePage';
 import LoginPage from './components/lesson-13-router/Exercise/Exercise-2/LoginPage';
 import React from 'react';
+import FormSignup from './components/lesson-14-validate/Practice/Practice-1';
+import Register from './components/lesson-14-validate/Practice/Practice-2/Register';
+import FormLogin from './components/lesson-14-validate/Practice/Practice-3/FormLogin';
+import SignupForm from './components/lesson-14-validate/Practice/Practice-3/test';
+import { FormContact } from './components/lesson-14-validate/Practice/Practice-4/FormContact';
+import { FormMedical } from './components/lesson-14-validate/Exercise/Practice-1/FormMedical';
+import Notification from './components/Notification';
+import EmailComposeForm from './components/lesson-14-validate/Exercise/Practice-2';
 const UserDetails = React.lazy(() =>
   import('./components/lesson-13-router/Practice/Practice-4/UserDetail.jsx')
 );
 
 const router = createBrowserRouter([
+  //React hook form
   {
     path: '/',
-    element: (
-      <div>
-        <h1>Helllo</h1>
-      </div>
-    ),
-  },
-  //Practice 1
-  {
-    path: 'about',
     element: <Layout />,
     children: [
       {
-        path: '/about',
-        element: <div>About</div>,
+        path: '/signup',
+        element: <FormSignup />,
+      },
+      {
+        path: '/register',
+        element: <Register />,
+      },
+      {
+        path: '/login',
+        element: <FormLogin />,
+      },
+      {
+        path: '/form',
+        element: <SignupForm />,
+      },
+      {
+        path: '/contact',
+        element: <FormContact />,
+      },
+      {
+        path: '/medical',
+        element: <FormMedical />,
+      },
+      {
+        path: '/compose-email',
+        element: <EmailComposeForm />,
+      },
+      {
+        path: '/notification',
+        element: <Notification />,
       },
       {
         path: '/about/us',
@@ -92,6 +120,7 @@ const router = createBrowserRouter([
     path: '/bt2/login',
     element: <LoginPage isLogin={false} />,
   },
+
   {
     path: '*',
     element: <div>404-Not Found</div>,

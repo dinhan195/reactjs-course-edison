@@ -2,3 +2,17 @@
 body {
   padding: 30px;
 }
+
+input {
+  display: block;
+}
+.form-field {
+  margin-top: 20px;
+}
+.error {
+  color: red;
+}
+textarea {
+  display: block;
+  height: 70px;
+}
