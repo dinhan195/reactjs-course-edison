@@ -12,9 +12,16 @@ function EmailComposeForm(props) {
     files: [],
   };
   const validations = Yup.object().shape({
-    to: Yup.string().required('Trường bắt buộc nhập!').min(1, 'string'),
-    subject: Yup.string().required('Trường bắt buộc nhập!').min(1, 'string'),
-    message: Yup.string().required('Trường bắt buộc nhập!').min(1, 'string'),
+    to: Yup.string()
+      .required('Trường bắt buộc nhập!')
+      .max(100, 'Không nhập quá 100 kí tự'),
+    subject: Yup.string()
+      .required('Trường bắt buộc nhập!')
+      .max(100, 'Không nhập quá 100 kí tự'),
+    message: Yup.string()
+      .required('Trường bắt buộc nhập!')
+      .max(1000, 'Không nhập quá 1000 kí tự'),
+    files: Yup.array().min(1, 'Chưa upload file'),
   });
   const onSubmit = (values) => {
     console.log(values);

@@ -19,15 +19,16 @@ export const FormMedical = () => {
           .max(15, 'Phải ít hơn hoặc bằng 15 kí tự')
           .required('Trường  bắt buộc nhập'),
         address: Yup.string().required('Trường  bắt buộc nhập'),
-        phoneNumber: Yup.number()
-          .typeError('Phải là số')
-          .required('Trường  bắt buộc nhập')
-          .max(20, 'Tối đa 20 kí tự'),
+        phoneNumber: Yup.string()
+          .matches(/^[0-9]+$/, 'Số diện thoại phải là số')
+          .min(10, 'Nhập ít nhất 10 kí tự')
+          .max(20, 'Tối đa 20 kí tự')
+          .required('Trường  bắt buộc nhập'),
 
         email: Yup.string()
           .email('Email không hợp lệ')
           .required('Trường  bắt buộc nhập'),
-        selectOptions: Yup.array().min(1, 'Trường  bắt buộc nhập'),
+        selectOptions: Yup.array().min(1, 'Trường bắt buộc nhập'),
       })}
       onSubmit={(values, { setSubmitting }) => {
         console.log(values);
